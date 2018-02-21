@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  font-family: verdana;
+    
+    
+}
+
+@media (max-width:800px) {
+    /* For mobile phones: */
+     .column, .footer, .row, .column, .home-image {
+        display: flex;
+        flex-direction: column;
+    }
+   	
+	.header {
+		display: flex;
+		background-color: white;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 5px;
+	}
+	
+	.topnav{
+		display: flex;
+		flex-direction: column;
+		
+	}
+    
+    
+    #phone{
+        order: 2;
+		width: 220px;
+		
+	}
+
+    #address{
+        order: 3;
+		width: 220px;
+		
+    }
+
+    #logo{
+       order: 1;
+	   width: 220px;
+	   
+	}
+
+}
+
+
+/* Style the header */
+.header {
+    display: flex;
+    background-color: white;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 5px;
+}
+
+
+#phone{
+    order: 1;
+    
+}
+
+#address{
+    order: 3;
+}
+
+#logo{
+    order: 2;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+	width: auto;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #d59e26;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-family: verdana;
+	letter-spacing: 1px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #d59e26;
+    color: #5d3a00;
+    
+}
+
+
+
+
+/* Create columns  */
+.column {
+    float: left;
+    width: 100%;
+    /*margin: 10px;*/
+    /*padding: 15px;*/
+    /*padding-top: 5px;*/
+    overflow: hidden;
+    
+}
+
+.home-image{
+    width: auto;
+    height: auto;
+}
+
+.homep{
+	font-family: verdana;
+	color: black;
+	font-size: 20px;
+	letter-spacing: 1px;
+	float: right;
+	
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: grid;
+    clear: both;
+}
+
+/* Slide show starts*/
+.mySlides {
+    display: none;
+    }
+    
+img {
+    vertical-align: middle;
+    }
+    
+    /* Slideshow container */
+.slideshow-container {
+      max-width: 1400px;
+      position: relative;
+      margin: auto;
+    }
+    
+    
+    /* The dots/bullets/indicators */
+.dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+.active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+.fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+@-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+@keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    
+
+/* Slide show End*/
+
+
+
+/* Style the footer */
+.footer {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+	width: auto;
+	font-family: verdana;
+	font-size: 20px;
+	letter-spacing: 3px;
+    color: #d59e26;
+
+}
+
+
+/*Menu styles are below*/
+.gallery {
+    margin: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+	
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    opacity: 0.5;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+.columnmenu{
+    float: left;
+    width: 50%;
+    height: auto;
+    /*margin: 5px;*/
+    /*padding: 15px;*/
+    padding-top: 5px;
+	
+    
+}
+
+.menu-image{
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.columnmenu p{
+	font-family: verdana;
+    color: goldenrod;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+
+/*end of menu styles*/
+
+
+
+
+/*We are styles are below*/
+.columnweare{
+    float: left;
+    width: 50%;
+    height: auto;
+    /*margin: 10px;*/
+    /*padding: 15px;*/
+    padding-top: 5px;
+}
+
+
+.header-weare{
+    font-family: verdana;
+    color: darkgray;
+    font-size: 20px;
+}
+
+.header-weare p{
+    font-family: verdana;
+    color: goldenrod;
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.header-weare ul{
+    font-family: verdana;
+    color: goldenrod;
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.header-weare li{
+    padding: 15px;
+}
+
+/*end of We are styles*/
+
+
+/*Requests styles are below*/
+.header-request h1{
+	font-family: verdana;
+    color: darkgray;
+    font-size: 20px;
+	padding: 10px;
+}
+
+.header-request p{
+    font-family: verdana;
+    color: goldenrod;
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+
+.request-form{
+	
+	padding: 10px 10px 10px 10px;
+	
+}
+
+.input-form{
+	width: 400px;
+	height: 40px;
+	font-family: verdana;
+	
+}
+
+.button-form{
+	width: 200px;
+	height: 40px;
+	font-family: verdana;
+	color: goldenrod;
+	font-weight: bold;
+	font-size: 15px;
+	
+}
+
+/*end of Requests styles*/
+
+
+
+
+
+
+
+
+
